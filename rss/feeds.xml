@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Megoc-米果壳</title>
+  
+  
+  <link href="/rss/feeds.xml" rel="self"/>
+  
+  <link href="http://blog.megoc.org/"/>
+  <updated>2019-10-03T15:22:37.596Z</updated>
+  <id>http://blog.megoc.org/</id>
+  
+  <author>
+    <name>Megoc</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo静态博客添加RSS源</title>
+    <link href="http://blog.megoc.org//hexo/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS%E6%BA%90.html"/>
+    <id>http://blog.megoc.org//hexo/hexo静态博客添加RSS源.html</id>
+    <published>2019-10-03T14:59:04.000Z</published>
+    <updated>2019-10-03T15:22:37.596Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装feed插件"><a href="#安装feed插件" class="headerlink" title="安装feed插件"></a>安装feed插件</h2><p>hexo提供了一个用于生成RSS XML文件的插件 <em>hexo-generator-feed</em>，在使用前需要使用包管理工具安装</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure><h2 id="使用插件"><a href="#使用插件" class="headerlink" title="使用插件"></a>使用插件</h2><p>在博客的配置文件 <em>_config.yml</em> 文件中，<em>plugins</em> 配置项中增加 <em>hexo-generator-feed</em> 的配置</p><figure class="highlight yaml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># Extensions</span></span><br><span class="line"><span class="hljs-comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="hljs-attr">plugins:</span></span><br><span class="line">  <span class="hljs-string">hexo-generator-feed</span></span><br><span class="line"><span class="hljs-comment"># feed plugin config</span></span><br><span class="line"><span class="hljs-attr">feed:</span></span><br><span class="line"><span class="hljs-attr">  type:</span> <span class="hljs-string">rss</span> <span class="hljs-comment">#feed type feed or atom</span></span><br><span class="line"><span class="hljs-attr">  path:</span> <span class="hljs-string">rss/feeds.xml</span> <span class="hljs-comment">#your rss xml path</span></span><br><span class="line"><span class="hljs-attr">  limit:</span> <span class="hljs-number">20</span> <span class="hljs-comment">#numbers</span></span><br></pre></td></tr></table></figure><h2 id="生成RSS"><a href="#生成RSS" class="headerlink" title="生成RSS"></a>生成RSS</h2><p>使用 <em>hexo generate</em> 命令即可生成rss订阅源文件，路径在 <em>public</em> 目录下</p><figure class="highlight yaml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-string">hexo</span> <span class="hljs-string">generate</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;安装feed插件&quot;&gt;&lt;a href=&quot;#安装feed插件&quot; class=&quot;headerlink&quot; title=&quot;安装feed插件&quot;&gt;&lt;/a&gt;安装feed插件&lt;/h2&gt;&lt;p&gt;hexo提供了一个用于生成RSS XML文件的插件 &lt;em&gt;hexo-generator-f
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://blog.megoc.org/categories/hexo/"/>
+    
+    
+      <category term="hexo rss" scheme="http://blog.megoc.org/tags/hexo-rss/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NPM &amp; yarn 设置淘宝镜像</title>
+    <link href="http://blog.megoc.org//%E5%89%8D%E7%AB%AF/NPM-yarn-%E8%AE%BE%E7%BD%AE%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.html"/>
+    <id>http://blog.megoc.org//前端/NPM-yarn-设置淘宝镜像.html</id>
+    <published>2019-10-02T13:59:22.000Z</published>
+    <updated>2019-10-02T14:12:16.641Z</updated>
+    
+    <content type="html"><![CDATA[<!-- ## NPM & yarn 设置淘宝镜像 --><p>由于npm和yarn的源默认地址在国外，数据需要飘洋过海等因素导致国内用户访问很慢。所以我们可以设置淘宝NPM镜像来加快包的下载。npm是nodejs默认安装的包管理工具，yarn则是由facebook发布的一款取代npm的包管理工具。下面将会分别介绍两款nodejs包管理工具如何设置淘宝镜像。</p><h2 id="NPM的设置方法"><a href="#NPM的设置方法" class="headerlink" title="NPM的设置方法"></a>NPM的设置方法</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br><span class="line">npm config set electron_mirror https://npm.taobao.org/mirrors/electron/</span><br><span class="line">npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/</span><br><span class="line">npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/</span><br></pre></td></tr></table></figure><h2 id="yarn的设置方法"><a href="#yarn的设置方法" class="headerlink" title="yarn的设置方法"></a>yarn的设置方法</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">yarn config set registry https://registry.npm.taobao.org -g</span><br><span class="line">yarn config set disturl https://npm.taobao.org/dist -g</span><br><span class="line">yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/ -g</span><br><span class="line">yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ -g</span><br><span class="line">yarn config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/ -g</span><br><span class="line">yarn config set chromedriver_cdnurl https://cdn.npm.taobao.org/dist/chromedriver -g</span><br><span class="line">yarn config set operadriver_cdnurl https://cdn.npm.taobao.org/dist/operadriver -g</span><br><span class="line">yarn config set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents -g</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!-- ## NPM &amp; yarn 设置淘宝镜像 --&gt;
+
+&lt;p&gt;由于npm和yarn的源默认地址在国外，数据需要飘洋过海等因素导致国内用户访问很慢。所以我们可以设置淘宝NPM镜像来加快包的下载。npm是nodejs默认安装的包管理工具，yarn则是由facebook发布的一款
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://blog.megoc.org/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="npm yarn" scheme="http://blog.megoc.org/tags/npm-yarn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.megoc.org//uncategorized/hello-world.html"/>
+    <id>http://blog.megoc.org//uncategorized/hello-world.html</id>
+    <published>2019-10-02T04:06:47.267Z</published>
+    <updated>2019-10-02T04:06:47.268Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
