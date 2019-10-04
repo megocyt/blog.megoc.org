@@ -1,0 +1,2 @@
+# blog.megoc.org
+blog
