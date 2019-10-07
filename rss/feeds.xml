@@ -6,7 +6,7 @@
   <link href="/rss/feeds.xml" rel="self"/>
   
   <link href="http://blog.megoc.org/"/>
-  <updated>2019-10-03T15:22:37.596Z</updated>
+  <updated>2019-10-07T12:21:30.287Z</updated>
   <id>http://blog.megoc.org/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Composer 设置国内镜像</title>
+    <link href="http://blog.megoc.org//PHP/Composer-%E8%AE%BE%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F.html"/>
+    <id>http://blog.megoc.org//PHP/Composer-设置国内镜像.html</id>
+    <published>2019-10-06T14:06:38.000Z</published>
+    <updated>2019-10-07T12:21:30.287Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Composer"><a href="#Composer" class="headerlink" title="Composer"></a>Composer</h2><p>Composer是一款PHP的依赖管理工具，它可以让PHP开发者能更好、更安全的管理和使用开源的代码库。它使用<a href="https://packagist.org/" target="_blank" rel="noopener">Packagist</a>作为它的默认源，但由于这个站点在国外导致国内下载很慢，所以这里则列出了国内的一些Composer镜像，修改全局源或者项目源以加快下载。</p><h2 id="Composer国内镜像"><a href="#Composer国内镜像" class="headerlink" title="Composer国内镜像"></a>Composer国内镜像</h2><ul><li>阿里云Composer镜像 <a href="https://mirrors.aliyun.com/composer/" target="_blank" rel="noopener">https://mirrors.aliyun.com/composer/</a></li><li>腾讯云 <a href="https://mirrors.cloud.tencent.com/composer/" target="_blank" rel="noopener">https://mirrors.cloud.tencent.com/composer/</a></li><li>华为云 <a href="https://mirrors.huaweicloud.com/repository/php/" target="_blank" rel="noopener">https://mirrors.huaweicloud.com/repository/php/</a></li><li>phpcomposer <a href="https://packagist.phpcomposer.com" target="_blank" rel="noopener">https://packagist.phpcomposer.com</a></li><li>cnpkg <a href="https://php.cnpkg.org" target="_blank" rel="noopener">https://php.cnpkg.org</a></li><li>上海交通大学 <a href="https://packagist.mirrors.sjtug.sjtu.edu.cn" target="_blank" rel="noopener">https://packagist.mirrors.sjtug.sjtu.edu.cn</a></li></ul><p>上面是比较常用的，比较稳定的PHP Composer镜像，推荐使用阿里云Composer镜像</p><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>参考<a href="https://mirrors.aliyun.com/composer/" target="_blank" rel="noopener">阿里云Composer镜像设置教程</a>，抄写如下：</p><h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h3><p>所有项目都会使用该镜像地址：</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/</span><br></pre></td></tr></table></figure><h3 id="取消配置"><a href="#取消配置" class="headerlink" title="取消配置"></a>取消配置</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g --unset repos.packagist</span><br></pre></td></tr></table></figure><h3 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h3><p>仅修改当前工程配置，仅当前工程可使用该镜像地址：</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config repo.packagist composer https://mirrors.aliyun.com/composer/</span><br></pre></td></tr></table></figure><h3 id="取消项目配置"><a href="#取消项目配置" class="headerlink" title="取消项目配置"></a>取消项目配置</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config --unset repos.packagist</span><br></pre></td></tr></table></figure><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://getcomposer.org/doc/" target="_blank" rel="noopener">Composer官方文档</a></li><li><a href="https://mirrors.aliyun.com/composer/" target="_blank" rel="noopener">阿里云Composer使用帮助</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Composer&quot;&gt;&lt;a href=&quot;#Composer&quot; class=&quot;headerlink&quot; title=&quot;Composer&quot;&gt;&lt;/a&gt;Composer&lt;/h2&gt;&lt;p&gt;Composer是一款PHP的依赖管理工具，它可以让PHP开发者能更好、更安全的管理和使用开
+      
+    
+    </summary>
+    
+    
+      <category term="PHP" scheme="http://blog.megoc.org/categories/PHP/"/>
+    
+    
+      <category term="composer" scheme="http://blog.megoc.org/tags/composer/"/>
+    
+      <category term="php" scheme="http://blog.megoc.org/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo静态博客添加RSS源</title>
     <link href="http://blog.megoc.org//hexo/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS%E6%BA%90.html"/>
     <id>http://blog.megoc.org//hexo/hexo静态博客添加RSS源.html</id>
     <published>2019-10-03T14:59:04.000Z</published>
-    <updated>2019-10-03T15:22:37.596Z</updated>
+    <updated>2019-10-07T12:18:05.594Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装feed插件"><a href="#安装feed插件" class="headerlink" title="安装feed插件"></a>安装feed插件</h2><p>hexo提供了一个用于生成RSS XML文件的插件 <em>hexo-generator-feed</em>，在使用前需要使用包管理工具安装</p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure><h2 id="使用插件"><a href="#使用插件" class="headerlink" title="使用插件"></a>使用插件</h2><p>在博客的配置文件 <em>_config.yml</em> 文件中，<em>plugins</em> 配置项中增加 <em>hexo-generator-feed</em> 的配置</p><figure class="highlight yaml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># Extensions</span></span><br><span class="line"><span class="hljs-comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="hljs-attr">plugins:</span></span><br><span class="line">  <span class="hljs-string">hexo-generator-feed</span></span><br><span class="line"><span class="hljs-comment"># feed plugin config</span></span><br><span class="line"><span class="hljs-attr">feed:</span></span><br><span class="line"><span class="hljs-attr">  type:</span> <span class="hljs-string">rss</span> <span class="hljs-comment">#feed type feed or atom</span></span><br><span class="line"><span class="hljs-attr">  path:</span> <span class="hljs-string">rss/feeds.xml</span> <span class="hljs-comment">#your rss xml path</span></span><br><span class="line"><span class="hljs-attr">  limit:</span> <span class="hljs-number">20</span> <span class="hljs-comment">#numbers</span></span><br></pre></td></tr></table></figure><h2 id="生成RSS"><a href="#生成RSS" class="headerlink" title="生成RSS"></a>生成RSS</h2><p>使用 <em>hexo generate</em> 命令即可生成rss订阅源文件，路径在 <em>public</em> 目录下</p><figure class="highlight yaml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-string">hexo</span> <span class="hljs-string">generate</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -38,7 +66,7 @@
       <category term="hexo" scheme="http://blog.megoc.org/categories/hexo/"/>
     
     
-      <category term="hexo rss" scheme="http://blog.megoc.org/tags/hexo-rss/"/>
+      <category term="hexo,rss" scheme="http://blog.megoc.org/tags/hexo-rss/"/>
     
   </entry>
   
@@ -47,7 +75,7 @@
     <link href="http://blog.megoc.org//%E5%89%8D%E7%AB%AF/NPM-yarn-%E8%AE%BE%E7%BD%AE%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.html"/>
     <id>http://blog.megoc.org//前端/NPM-yarn-设置淘宝镜像.html</id>
     <published>2019-10-02T13:59:22.000Z</published>
-    <updated>2019-10-02T14:12:16.641Z</updated>
+    <updated>2019-10-07T12:18:26.210Z</updated>
     
     <content type="html"><![CDATA[<!-- ## NPM & yarn 设置淘宝镜像 --><p>由于npm和yarn的源默认地址在国外，数据需要飘洋过海等因素导致国内用户访问很慢。所以我们可以设置淘宝NPM镜像来加快包的下载。npm是nodejs默认安装的包管理工具，yarn则是由facebook发布的一款取代npm的包管理工具。下面将会分别介绍两款nodejs包管理工具如何设置淘宝镜像。</p><h2 id="NPM的设置方法"><a href="#NPM的设置方法" class="headerlink" title="NPM的设置方法"></a>NPM的设置方法</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br><span class="line">npm config set disturl https://npm.taobao.org/dist</span><br><span class="line">npm config set electron_mirror https://npm.taobao.org/mirrors/electron/</span><br><span class="line">npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/</span><br><span class="line">npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/</span><br></pre></td></tr></table></figure><h2 id="yarn的设置方法"><a href="#yarn的设置方法" class="headerlink" title="yarn的设置方法"></a>yarn的设置方法</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">yarn config set registry https://registry.npm.taobao.org -g</span><br><span class="line">yarn config set disturl https://npm.taobao.org/dist -g</span><br><span class="line">yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/ -g</span><br><span class="line">yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ -g</span><br><span class="line">yarn config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/ -g</span><br><span class="line">yarn config set chromedriver_cdnurl https://cdn.npm.taobao.org/dist/chromedriver -g</span><br><span class="line">yarn config set operadriver_cdnurl https://cdn.npm.taobao.org/dist/operadriver -g</span><br><span class="line">yarn config set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents -g</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -66,7 +94,7 @@
       <category term="前端" scheme="http://blog.megoc.org/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="npm yarn" scheme="http://blog.megoc.org/tags/npm-yarn/"/>
+      <category term="npm,yarn" scheme="http://blog.megoc.org/tags/npm-yarn/"/>
     
   </entry>
   
